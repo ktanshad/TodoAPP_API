@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todoappapi/controller/todo_provider.dart';
-import 'package:todoappapi/view/add_page/add_page.dart';
 import 'package:todoappapi/view/todo_list/todo_list.dart';
 
 void main() {
@@ -19,10 +18,6 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create:(context)=>TodoProvider(),
       )],
       child: MaterialApp(
-        
-        routes:{
-         '/ADDPage':(context)=>AddPage(),
-        },
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData.dark(),
