@@ -18,7 +18,6 @@ class TodoListPage extends StatelessWidget {
           itemCount: value.items.length,
           itemBuilder: (context,index){
             final todoModel=value.items[index];
-            // final id=item['_id']as String;
             return ListTile(
               leading: Text('${index+1}'),
               title: Text(todoModel.title!),
