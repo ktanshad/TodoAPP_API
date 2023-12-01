@@ -68,7 +68,6 @@ class TodoProvider extends ChangeNotifier {
 
   void isEditValueChange(bool value){
     isEdit=value;
-    notifyListeners();
   }
 
 
